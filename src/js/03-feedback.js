@@ -38,7 +38,6 @@ function onSubmit(event) {
     }
 
 
-
      localStorage.clear();
     feedbackForm.reset();
 }
