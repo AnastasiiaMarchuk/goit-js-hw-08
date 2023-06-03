@@ -31,14 +31,11 @@ function onSubmit(event) {
 
     if (feedbackForm.elements.email.value.length === 0 || feedbackForm.elements.message.value.length === 0) {
         alert('Всі поля повинні бути заповнені');
-     
-    }
-    if (feedbackForm.elements.email.value.length !== 0 || feedbackForm.elements.message.value.length !== 0) {
-        console.log(savedData);
+        return;
     }
 
+    console.log(savedData);
 
-
-     localStorage.clear();
+    localStorage.clear();
     feedbackForm.reset();
 }
